@@ -21,11 +21,13 @@
 <div class="container">
 	<title>QR code generator</title>
 
-	<img
-		alt="foo"
-		class="qr"
-		src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data={uuid}"
-	/>
+	<a href="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data={uuid}" download="{uuid}.png">
+		<img
+			alt="foo"
+			class="qr"
+			src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data={uuid}"
+		/>
+	</a>
 
 	<p>{uuid}</p>
 
