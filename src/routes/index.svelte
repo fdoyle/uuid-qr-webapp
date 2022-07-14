@@ -1,7 +1,5 @@
 <script lang="js">
 	// @ts-ignore
-	import QR from 'svelte-qr';
-import { each } from 'svelte/internal';
 	import { v4 as uuidv4 } from 'uuid';
 
 	let uuid = uuidv4();
@@ -9,30 +7,39 @@ import { each } from 'svelte/internal';
 
 	function newUuid() {
 		uuid = uuidv4();
-		history = [uuid].concat(history)
+		history = [uuid].concat(history);
 	}
 
 	/**
-* @param {string} newUuid
-*/
+	 * @param {string} newUuid
+	 */
 	function setCurrent(newUuid) {
-		uuid = newUuid
+		uuid = newUuid;
 	}
 </script>
 
 <div class="container">
 	<title>QR code generator</title>
 
-	<img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data={uuid}"/>
+	<img
+		alt="foo"
+		class="qr"
+		src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data={uuid}"
+	/>
 
 	<p>{uuid}</p>
 
-    <button on:click={newUuid} aria-label="new uuid"> New UUID </button>
+	<button on:click={newUuid} aria-label="new uuid"> New UUID </button>
 
 	{#each history as item (item)}
-		<a class="history-item" on:click={() => {setCurrent(item)}}>{item}</a>
+		<a
+			alt="foo"
+			class="history-item"
+			on:click={() => {
+				setCurrent(item);
+			}}>{item}</a
+		>
 	{/each}
-
 </div>
 
 <style>
@@ -40,13 +47,13 @@ import { each } from 'svelte/internal';
 		width: 300px;
 	}
 
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items:center;
-    }
-	
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
 	.history-item {
 		font-family: 'Courier New', Courier, monospace;
 		font-weight: bold;
