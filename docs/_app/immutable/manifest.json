@@ -1,24 +1,25 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-73c456d6.js",
+    "file": "start-2de68c36.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_index-8f4b314d.js"
+      "_index-a40a11a7.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
       ".svelte-kit/runtime/components/error.svelte",
+      "src/routes/bulk.svelte",
       "src/routes/index.svelte"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-f01776b4.js",
+    "file": "pages/__layout.svelte-7a84b379.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-8f4b314d.js"
+      "_index-a40a11a7.js"
     ],
     "css": [
       "assets/pages/__layout.svelte-8496307f.css"
@@ -34,27 +35,44 @@
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
-    "file": "error.svelte-89d24276.js",
+    "file": "error.svelte-6e85fef9.js",
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-8f4b314d.js"
+      "_index-a40a11a7.js"
+    ]
+  },
+  "src/routes/bulk.svelte": {
+    "file": "pages/bulk.svelte-91bceb61.js",
+    "src": "src/routes/bulk.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-a40a11a7.js",
+      "_v4-bf0bf616.js"
+    ],
+    "css": [
+      "assets/pages/bulk.svelte-4fe48c51.css"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-b611fc9e.js",
+    "file": "pages/index.svelte-31337407.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-8f4b314d.js"
+      "_index-a40a11a7.js",
+      "_v4-bf0bf616.js"
     ],
     "css": [
       "assets/pages/index.svelte-70d6e058.css"
     ]
   },
-  "_index-8f4b314d.js": {
-    "file": "chunks/index-8f4b314d.js"
+  "_index-a40a11a7.js": {
+    "file": "chunks/index-a40a11a7.js"
+  },
+  "_v4-bf0bf616.js": {
+    "file": "chunks/v4-bf0bf616.js"
   }
 }
