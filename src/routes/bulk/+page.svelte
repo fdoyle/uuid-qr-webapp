@@ -12,7 +12,6 @@
 		temp = temp.concat(uuidv4());
 	}
 	ids = temp
-	console.log("Foo bar baz")
 </script>
 
 <div class="container">
