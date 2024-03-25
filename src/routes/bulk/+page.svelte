@@ -2,27 +2,21 @@
 	// @ts-ignore
 	import { v4 as uuidv4 } from 'uuid';
 
-
-    let count = 100
-    /**
-* @type {string[]}
-*/
-    let ids = []
-
-
-	function reset() {
-		ids = [];
-		for (let i = 0; i != 400; i++) {
-			ids = ids.concat(uuidv4());
-		}
+	let count = 100;
+	/**
+	 * @type {string[]}
+	 */
+	let ids = [];
+	let temp = [];
+	for (let i = 0; i != 400; i++) {
+		temp = temp.concat(uuidv4());
 	}
-
-    reset()
+	ids = temp
+	console.log("Foo bar baz")
 </script>
 
 <div class="container">
 	<title>QR code generator</title>
-    
 
 	<div class="inner-container">
 		{#each ids as uuid, i}
@@ -41,6 +35,7 @@
 <style>
 	.qr {
 		width: 1in;
+		height: 1in;
 		margin: 0px;
 	}
 

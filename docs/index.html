@@ -2,54 +2,67 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="/uuid-qr-webapp/favicon.png" />
+		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta http-equiv="content-security-policy" content="">
-	<link rel="stylesheet" href="/uuid-qr-webapp/_app/immutable/assets/pages/__layout.svelte-8496307f.css">
-	<link rel="stylesheet" href="/uuid-qr-webapp/_app/immutable/assets/pages/index.svelte-70d6e058.css">
-	<link rel="modulepreload" href="/uuid-qr-webapp/_app/immutable/start-2de68c36.js">
-	<link rel="modulepreload" href="/uuid-qr-webapp/_app/immutable/chunks/index-a40a11a7.js">
-	<link rel="modulepreload" href="/uuid-qr-webapp/_app/immutable/pages/__layout.svelte-7a84b379.js">
-	<link rel="modulepreload" href="/uuid-qr-webapp/_app/immutable/pages/index.svelte-31337407.js">
-	<link rel="modulepreload" href="/uuid-qr-webapp/_app/immutable/chunks/v4-bf0bf616.js">
+		
+		<link href="./_app/immutable/assets/0.3e490099.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/2.fa88727e.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.9831f04a.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.129df4ad.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.e5e4b59f.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/paths.edcc967b.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.c358a75f.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.d87e3649.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.3425deb3.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/v4.cf522c50.js">
 	</head>
 	<body>
 		<div>
+
 
 
 <header class="svelte-t2wq17"></header>
 
 <main class="svelte-f5pegm"><div class="container svelte-thql3r"><title>QR code generator</title>
 
-	<a href="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=809306a3-5be0-44ad-b4ea-70ef5d5570b7" download="809306a3-5be0-44ad-b4ea-70ef5d5570b7.png"><img alt="foo" class="qr svelte-thql3r" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=809306a3-5be0-44ad-b4ea-70ef5d5570b7"></a>
+	<a href="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=555f50e4-a8f6-48ab-a1db-86684e0ee008" download="555f50e4-a8f6-48ab-a1db-86684e0ee008.png"><img alt="foo" class="qr svelte-thql3r" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=555f50e4-a8f6-48ab-a1db-86684e0ee008"></a>
 
-	<p>809306a3-5be0-44ad-b4ea-70ef5d5570b7</p>
+	<p>555f50e4-a8f6-48ab-a1db-86684e0ee008</p>
 
 	<button aria-label="new uuid">New UUID </button>
 
-	<a alt="foo" class="history-item svelte-thql3r">809306a3-5be0-44ad-b4ea-70ef5d5570b7</a>
+	<a alt="foo" class="history-item svelte-thql3r">555f50e4-a8f6-48ab-a1db-86684e0ee008</a>
 </div></main>
 
 <footer class="svelte-f5pegm"></footer>
 
 
-		<script type="module" data-sveltekit-hydrate="1orq8le">
-		import { start } from "/uuid-qr-webapp/_app/immutable/start-2de68c36.js";
-		start({
-			target: document.querySelector('[data-sveltekit-hydrate="1orq8le"]').parentNode,
-			paths: {"base":"/uuid-qr-webapp","assets":"/uuid-qr-webapp"},
-			session: {},
-			route: true,
-			spa: false,
-			trailing_slash: "never",
-			hydrate: {
-				status: 200,
-				error: null,
-				nodes: [0, 3],
-				params: {},
-				routeId: ""
-			}
-		});
-	</script></div>
+			
+			<script>
+				{
+					__sveltekit_zuc7r2 = {
+						assets: "/uuid-qr-webapp",
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.9831f04a.js"),
+						import("./_app/immutable/entry/app.c358a75f.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
 	</body>
 </html>
